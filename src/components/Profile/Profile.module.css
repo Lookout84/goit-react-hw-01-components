@@ -1,0 +1,12 @@
+.stats {
+  display: flex;
+  list-style: none;
+}
+.description {
+  text-align: center;
+  width: 500px;
+  height: 100%;
+}
+.avatar {
+  text-align: center;
+}
