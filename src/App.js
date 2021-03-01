@@ -13,9 +13,7 @@ import randomColor from 'randomcolor';
 
 const { name, tag, location, avatar, stats } = users;
 
-const colors = randomColor({ count: 5, hue: 'green' });
-
-console.log(colors);
+const colors = randomColor();
 
 function App() {
   return (

@@ -9,9 +9,15 @@
   padding: 10px;
   height: 80px;
   width: 80px;
-  outline: 1px solid grey;
   margin-bottom: 20px;
 }
+.item:hover,
+:focus-within {
+  transform: scale(1.06);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+
 .label {
   margin-bottom: 10px;
   font-weight: 400;
