@@ -1,12 +1,27 @@
-.stats {
-  display: flex;
+/* .profile {
+  display: table;
+  margin: 0 auto;
   list-style: none;
+} */
+.stats {
+  list-style: none;
+  margin: 0 auto;
+  display: flex;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 .description {
-  text-align: center;
-  width: 500px;
-  height: 100%;
+  display: table;
+  margin: 0 auto;
+  list-style: none;
 }
 .avatar {
+  text-align: center;
+}
+.item {
+  display: inline-grid;
+  padding: 10px;
+  margin-bottom: 20px;
   text-align: center;
 }
