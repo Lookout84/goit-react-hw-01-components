@@ -11,19 +11,13 @@
 .transactionHistory td {
   min-width: 150px;
   color: #696969;
-  border-bottom: 1px solid #eee;
+  border: 1px solid #706d97;
 }
 .transactionHistory th,
 td {
   padding: 10px;
   height: 20px;
 }
-/* .transactionHistory td:first-child {
-  min-width: 0;
-}
-.transactionHistory td:last-child {
-  min-width: 0; */
-/* } */
-.transactionHistory tr:nth-child(odd) {
-  background-color: #eee;
+.transactionHistory tr:nth-child(2n) {
+  background-color: #706d97;
 }

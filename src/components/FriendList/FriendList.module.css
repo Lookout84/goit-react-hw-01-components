@@ -1,6 +1,7 @@
 .friendList {
   display: table;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .item {
@@ -8,12 +9,19 @@
   justify-content: right;
   align-items: center;
   margin: 0px 0px 10px 0px;
-  border: 1px solid grey;
+  border: 1px solid #c9c9a6;
   padding: 10px 20px;
-  width: 200px;
+  width: 250px;
   height: 80px;
+  background-color: #c9c9a6;
 }
 
+.item:hover,
+:focus-within {
+  transform: scale(1.06);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
 .statusOnline {
   margin-right: 5px;
   width: 10px;

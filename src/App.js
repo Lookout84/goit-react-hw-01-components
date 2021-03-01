@@ -8,15 +8,19 @@ import users from './db/user.json';
 import statData from './db/statistical-data.json';
 import friends from './db/friends.json';
 import transactions from './db/transactions.json';
+import randomColor from 'randomcolor';
+//import { buildQueries } from '@testing-library/react';
 
 const { name, tag, location, avatar, stats } = users;
 
-// console.log(statData);
+const colors = randomColor({ count: 5, hue: 'green' });
+
+console.log(colors);
 
 function App() {
   return (
     <div className="App">
-      <h1>hello</h1>
+      <h1>Home work #1</h1>
       <Profile
         name={name}
         tag={tag}
@@ -24,7 +28,7 @@ function App() {
         avatar={avatar}
         stats={stats}
       />
-      <Statistics title="statistics" stats={statData} />
+      <Statistics title="statistics" stats={statData} colors={colors} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
     </div>

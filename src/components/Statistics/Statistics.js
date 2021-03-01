@@ -2,7 +2,7 @@ import React from 'react';
 import style from './Statistics.module.css';
 import PropTypes from 'prop-types';
 
-const Statistics = ({ title, stats }) => {
+const Statistics = ({ title, stats, colors }) => {
   return (
     <>
       <section className={style.statistic}>
@@ -12,7 +12,11 @@ const Statistics = ({ title, stats }) => {
           {stats.map(el => {
             const { id, label, percentage } = el;
             return (
-              <li className={style.item} key={id}>
+              <li
+                className={style.item}
+                key={id}
+                style={{ backgroundColor: colors }}
+              >
                 <span className={style.label}>{label}</span>
                 <span className={style.percentag}>{percentage}%</span>
               </li>

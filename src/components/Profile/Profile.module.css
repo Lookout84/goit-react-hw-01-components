@@ -1,8 +1,18 @@
-/* .profile {
+.profile {
   display: table;
   margin: 0 auto;
   list-style: none;
-} */
+  padding: 20px;
+  background-color: #c9c9a6;
+}
+
+.profile:hover,
+:focus-within {
+  transform: scale(1.06);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
 .stats {
   list-style: none;
   margin: 0 auto;
@@ -22,6 +32,24 @@
 .item {
   display: inline-grid;
   padding: 10px;
-  margin-bottom: 20px;
   text-align: center;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.tag,
+.location,
+.quantity {
+  font-size: 14px;
+  font-weight: 500;
+  color: grey;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
